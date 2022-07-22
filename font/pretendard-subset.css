@@ -1,0 +1,53 @@
+/* Set up static subset for old browsers ONLY 4 Weights */
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Pretendard";
+    font-weight: 800;
+    font-display: swap;
+    src: local("Pretendard ExtraBold"),
+      url("./woff2-subset/Pretendard-ExtraBold.subset.woff2") format("woff2"),
+      url("./woff-subset/Pretendard-ExtraBold.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"),
+      url("./woff2-subset/Pretendard-Bold.subset.woff2") format("woff2"),
+      url("./woff-subset/Pretendard-Bold.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"),
+      url("./woff2-subset/Pretendard-Medium.subset.woff2") format("woff2"),
+      url("./woff-subset/Pretendard-Medium.subset.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"),
+      url("./woff2-subset/Pretendard-Regular.subset.woff2") format("woff2"),
+      url("./woff-subset/Pretendard-Regular.subset.woff") format("woff");
+  }
+}
+
+/* Set up variable font for modern browsers */
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Pretendard";
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: local("Pretendard Variable"),
+      url("./variable-subset/PretendardVariable.subset.woff2")
+        format("woff2 supports variations"),
+      url("./variable-subset/PretendardVariable.subset.woff2")
+        format("woff2-variations");
+  }
+}
