@@ -122,3 +122,15 @@ body {
 .button:focus {
   background: #eaf0f3;
 }
+
+.tnum {
+  font-feature-settings: "tnum" on;
+}
+
+.ss07 {
+  font-feature-settings: "ss07";
+}
+
+.ss01 {
+  font-feature-settings: "ss01";
+}

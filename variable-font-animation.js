@@ -36,3 +36,22 @@ buttons.forEach(button => {
     console.log(resetSlider.defaultValue);
   };
 });
+
+
+const openTypeContainer = document.getElementById('opentype-select')
+openTypeContainer.addEventListener('change', (ev) => {
+  const id = ev.target.id
+  const editables = document.querySelectorAll('*[contenteditable="true"]');
+
+  for (const el of editables) {
+    el.classList.remove('tnum', 'ss01', 'ss07')
+  }
+
+  if (id === 'nop') {
+    return
+  }
+  for (const el of editables) {
+    el.classList.add(id)
+  }
+
+})

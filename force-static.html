@@ -1,12 +1,23 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="stylesheet" href="./font/force-static-subset.css"/>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./font/force-static-subset.css" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- Wait for dom ready -->
-    <script src="./variable-font-animation.js" async></script> 
+    <script src="./variable-font-animation.js" async></script>
 </head>
+
 <body>
     <h1>Pretendard font test [Static subset!]</h1>
+    <h2>Opentype feature 적용하기</h2>
+    <div>
+        <form id="opentype-select">
+            <input type="radio" name="style" id="nop">적용 안함</input>
+            <input type="radio" name="style" id="tnum">tnum : 고정폭 숫자</input>
+            <input type="radio" name="style" id="ss01">ss01 : 곧은 스타일 6과 9</input>
+            <input type="radio" name="style" id="ss07">ss07 : 단층 스타일 a</input>
+        </form>
+    </div>
 
     <h2>Playground</h2>
     <h3>Weight-800</h3>
@@ -33,9 +44,11 @@
     <h3>Italic</h3>
     <div contenteditable="true" style="font-weight: 400;">
         <i>
-        테스트할 글자를 입력하세요
-    </i>
+            테스트할 글자를 입력하세요
+        </i>
     </div>
 
-    <a href="./index.html"><h2>돌아가기</h2></a>
+    <a href="./index.html">
+        <h2>돌아가기</h2>
+    </a>
 </body>
